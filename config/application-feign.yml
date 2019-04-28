@@ -1,0 +1,4 @@
+feign:
+  httpclient.enable: false
+  okhttp.enable: true
+https.protocols: "TLSv1.1"

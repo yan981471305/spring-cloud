@@ -1,0 +1,15 @@
+oauth2:
+  private-key:
+    path: "jwt_keypair.jks"
+    alias: "jwt"
+    password: "KCPzQVp8VVyHV9Ds"
+flyway:
+  table: oauth2-schema-version
+spring.profiles.include:
+  - swagger
+  - flyway
+  - rabbit
+  - jwt
+  - mysql
+  - undertow
+  - feign

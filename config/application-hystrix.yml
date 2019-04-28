@@ -1,0 +1,94 @@
+# Hystrix 默认加载的配置文件 - 限流、 熔断示例
+hystrix:
+  shareSecurityContext: true
+  threadpool:
+    #如果没有定义HystrixThreadPoolKey，HystrixThreadPoolKey会默认定义为HystrixCommandGroupKey的值
+    default:
+      # 缓冲区大小超限的阈值，超限就直接降级
+      queueSizeRejectionThreshold: 2
+      # 缓冲区大小， 如果为-1，则不缓冲，直接进行降级 fallback
+      maxQueueSize: 200
+      # 线程池大小
+      coreSize: 1
+  # 执行策略
+  command:
+    default:
+      requestLog:
+        # 设置HystrixCommand执行和事件是否打印到HystrixRequestLog中
+        enabled: false
+      execution:
+        isolation:
+          semaphore:
+            # 信号量模式下，最大并发量
+            maxConcurrentRequests: 2
+          thread:
+            # 取消时候中断线程
+            interruptOnFutureCancel: false
+            # 超时时中断线程
+            interruptOnTimeout: true
+            # 超时时间，默认1000毫秒
+            timeoutInMilliseconds: 15000
+          # 资源隔离模式，默认thread。 还有一种叫信号量
+          strategy: THREAD
+        timeout:
+          # 是否打开超时
+          enabled: true
+      requestCache:
+        # 设置是否缓存请求，request-scope内缓存
+        enabled: false
+      # 熔断策略
+      circuitBreaker:
+        # 10秒后，进入半打开状态（熔断开启，间隔一段时间后，会让一部分的命令去请求服务提供者，如果结果依旧是失败，则又会进入熔断状态，如果成功，就关闭熔断）。 默认5秒
+        sleepWindowInMilliseconds: 10000
+        # 强制关闭熔断
+        forceClosed: false
+        # 强制开启熔断
+        forceOpen: false
+        # 前提条件，一定时间内发起一定数量的请求。  也就是5秒钟内(这个5秒对应下面的滚动窗口长度)至少请求4次，熔断器才发挥起作用。  默认20
+        requestVolumeThreshold: 4
+        # 启用/禁用熔断机制
+        enabled: true
+        # 错误百分比。达到或超过这个百分比，熔断器打开。  比如：5秒内有4个请求，2个请求超时或者失败，就会自动开启熔断
+        errorThresholdPercentage: 50
+      # 度量策略
+      metrics:
+        healthSnapshot:
+          # 数据取样时间间隔
+          intervalInMilliseconds: 500
+        rollingStats:
+          # 5秒为一次统计周期，术语描述：滚动窗口的长度为5秒
+          timeInMilliseconds: 5000
+          # 统计周期内 度量桶的数量，必须被timeInMilliseconds整除。作用：
+          numBuckets: 10
+        rollingPercentile:
+          # 设置执行时间统计周期为多久，用来计算百分比
+          timeInMilliseconds: 60000
+          # 执行时间统计周期内，每个度量桶最多统计多少条记录。设置为50，有100次请求，则只会统计最近的10次
+          bucketSize: 100
+          # 是否收集执行时间，并计算各个时间段的百分比
+          enabled: true
+          # 执行时间统计周期内，度量桶的数量
+          numBuckets: 6
+      # 降级策略
+      fallback:
+        isolation:
+          semaphore:
+            # fallback执行并发量
+            maxConcurrentRequests: 100
+        # 是否开启服务降级
+        enabled: true
+    DummyTimeout:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 2000
+    DummyNumberPool:
+      # 缓冲区大小， 如果为-1，则不缓冲，直接进行降级 fallback
+      maxQueueSize: -1
+      # 线程池大小
+      coreSize: 3
+    DummyHello:
+      # 缓冲区大小， 如果为-1，则不缓冲，直接进行降级 fallback
+      maxQueueSize: -1
+      # 线程池大小
+      coreSize: 2

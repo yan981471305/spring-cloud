@@ -1,0 +1,32 @@
+rabbit:
+  host: 127.0.0.1
+  port: 5672
+  web-stomp-port: 61613
+  username: 'rabbit'
+  password: 'rabbit123456'
+spring:
+  rabbitmq:
+    addresses: amqp://${rabbit.host}:${rabbit.port}
+    username: ${rabbit.username}
+    password: ${rabbit.password}
+    virtual-host: /
+---
+spring:
+  profiles: default
+rabbit:
+  host: 127.0.0.1
+---
+spring:
+  profiles: dev
+rabbit:
+  host: rabbitmq-dev
+---
+spring:
+  profiles: prod
+rabbit:
+  host: rabbitmq
+---
+spring:
+  profiles: test
+rabbit:
+  host: rabbitmq-test

@@ -1,0 +1,10 @@
+security:
+  headers:
+    frame: false
+  oauth2:
+    resource:
+      jwt:
+        keyValue: |
+          -----BEGIN PUBLIC KEY-----
+          MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAieQ9BML07B1ahs/PwL0f2UmvyGDbLjSU7//ZZ5UoQjpm4gBeJ0bFYLN4CK++ao7XYjZ4B2Rwu81cZ3zQ7RI7qtxGwTMFyavkTrarVfurcmwfS5vyyEChEiYDWEvi+bGurZasZKrXZ1r1VFLk+TRQfunQwRCIYGP+e3qZ2SiuaOqqdEjYia3CmKcM4QhN15CO+Dv7NclKRspN0VmntF4hyfkruV81gHnTXzZQ0NusWxs+yrLtpKot7kROGfVkDEpGPWUBXyUQLr5gCBVnzpTLBYCTjfYh+nzIpKfjjHLgW9Gy74WCpYLRY24u/KZzPecHZxnlJZ43VTUL4Gh7hlIeeQIDAQAB
+          -----END PUBLIC KEY-----

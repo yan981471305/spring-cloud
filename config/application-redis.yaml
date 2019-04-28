@@ -1,0 +1,37 @@
+redis:
+  host: redis
+  port: 6379
+spring:
+  redis:
+      host: ${redis.host}
+      port: ${redis.port}
+      database: ${redis.database}
+      pool:
+        max-active: 8
+        max-idle: 0
+        max-wait: -1
+        min-idle: 0
+---
+spring:
+  profiles: default
+redis:
+  host: redis.demo.io
+  database: 0
+---
+spring:
+  profiles: dev
+redis:
+  host: redis
+  database: 0
+---
+spring:
+  profiles: prod
+redis:
+  host: redis
+  database: 1
+---
+spring:
+  profiles: test
+redis:
+  host: redis
+  database: 2

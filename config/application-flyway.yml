@@ -1,0 +1,10 @@
+flyway:
+  encoding: UTF-8
+  locations: classpath:db/migration
+  baseline-on-migrate: true
+  placeholder-prefix: '#['
+  placeholder-suffix: ']'
+  baseline-version: 1
+  sql-migration-prefix: V
+  sql-migration-suffix: .sql
+  init-sqls: select 1
