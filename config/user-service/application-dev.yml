@@ -1,8 +1,6 @@
 swagger:
   service-name: "用户服务"
   service-desc: "管理用户"
-flyway:
-  table: user-schema-version
 spring:
   profiles.include:
     - swagger
