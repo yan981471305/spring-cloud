@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 10001
 spring:
   application:
     name: config-server
@@ -7,23 +7,17 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/yan981471305/spring-cloud.git
-          ignore-local-ssh-settings: true
-          strictHostKeyChecking: false
-          force-pull: true
-          searchPaths: '{application}'
-          clone-on-start: true
+          uri: https://github.com/yan981471305/spring-cloud/tree/master/config
+  #        ignore-local-ssh-settings: true
+  #        strictHostKeyChecking: false
+  #        force-pull: true
+          search-paths: '{application}'
+    #      clone-on-start: true
           username: yan981471305
           password: yan199436
+
 eureka:
-  port: 8080
-  username: discovery
-  password: 3GfhPZQifTpVcu
   client:
-    registry-fetch-interval-seconds: 5
     service-url:
-      defaultZone: http://${eureka.username}:${eureka.password}@eureka1:${eureka.port}/eureka,http://${eureka.username}:${eureka.password}@eureka2:${eureka.port}/eureka
-  instance:
-    prefer-ip-address: true
-    lease-renewal-interval-in-seconds: 5
-    lease-expiration-duration-in-seconds: 10
+      defaultZone: http://localhost:10000/eureka/
+

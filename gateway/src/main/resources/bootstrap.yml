@@ -7,6 +7,10 @@ spring:
         enabled: true
         service-id: config-server
       name: ${spring.application.name}
+      # 远程仓库的分支
+      label: master
+      # dev 开发环境配置文件 |  test 测试环境  |  pro 正式环境
+      profile: dev
       fail-fast: true
       retry:  #启用连接失败重试，需要依赖spring-retry和spring-boot-starter-aop
         initial-interval: 1000  #最初重试间隔为1000毫秒
@@ -14,14 +18,9 @@ spring:
         max-attempts: 30        #最多重试 30 次
         max-interval: 5000      #最长重试间隔为 5000 毫秒
 eureka:
-  host: eureka-server
-  port: 8080
-  username: discovery
-  password: 3GfhPZQifTpVcu
   client:
-    registry-fetch-interval-seconds: 5
     service-url:
-      defaultZone: http://${eureka.username}:${eureka.password}@eureka1:${eureka.port}/eureka,http://${eureka.username}:${eureka.password}@eureka2:${eureka.port}/eureka
+      defaultZone: http://localhost:10000/eureka/
   instance:
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 5
@@ -29,19 +28,19 @@ eureka:
 logging:
   level:
     org.springframework.security: debug
-management:
-  endpoints:
-    web:
-      base-path: "/"
----
-spring:
-  profiles: default
-  cloud:
-    config:
-      discovery:
-        enabled: false
-      uri: http://config.demo.io
-eureka:
-  client:
-    service-url:
-      defaultZone: http://${eureka.username}:${eureka.password}@eureka1:8761/eureka,http://${eureka.username}:${eureka.password}@eureka2:8762/eureka
+#management:
+#  endpoints:
+#    web:
+#      base-path: "/"
+#---
+#spring:
+#  profiles: default
+#  cloud:
+#    config:
+#      discovery:
+#        enabled: false
+#      uri: http://config.demo.io
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://${eureka.username}:${eureka.password}@eureka1:8761/eureka,http://${eureka.username}:${eureka.password}@eureka2:8762/eureka

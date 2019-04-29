@@ -31,13 +31,12 @@
         <flyway.version>5.1.4</flyway.version>
         <fastjson.version>1.2.47</fastjson.version>
         <druid.starter.version>1.1.10</druid.starter.version>
-        <guava.version>23.0</guava.version>
         <lombok.version>1.14.8</lombok.version>
         <spring.retry.version>1.2.2.RELEASE</spring.retry.version>
-        <feign.okHttp.version>10.0.1</feign.okHttp.version>
+        <!--<feign.okHttp.version>10.0.1</feign.okHttp.version>-->
         <mybatis.version>1.3.1</mybatis.version>
         <mybatis.generator.version>1.3.7</mybatis.generator.version>
-        <mybatis.generator.configFile>${basedir}/src/main/resources/mybatis-generator.xml</mybatis.generator.configFile>
+     <!--   <mybatis.generator.configFile>${basedir}/src/main/resources/mybatis-generator.xml</mybatis.generator.configFile>-->
         <mybatis.generator.outputDirectory>${basedir}/src/main/java</mybatis.generator.outputDirectory>
         <mybatis.generator.verbose>true</mybatis.generator.verbose>
         <mybatis.generator.overwrite>true</mybatis.generator.overwrite>
@@ -115,12 +114,6 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.springframework.boot</groupId>
-                        <artifactId>spring-boot-starter-tomcat</artifactId>
-                    </exclusion>
-                </exclusions>
                 <version>${spring-boot.version}</version>
             </dependency>
 
@@ -165,12 +158,12 @@
             </dependency>
 
             <!--google工具类-->
-            <dependency>
+            <!--<dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
             </dependency>
-
+-->
             <!--lombok简化代码-->
             <dependency>
                  <groupId>org.projectlombok</groupId>
@@ -179,11 +172,11 @@
             </dependency>
 
             <!--FeignClient使用OKHttpClient-->
-            <dependency>
+           <!-- <dependency>
                 <groupId>io.github.openfeign</groupId>
                 <artifactId>feign-okhttp</artifactId>
                 <version>${feign.okHttp.version}</version>
-            </dependency>
+            </dependency>-->
 
             <!--mybatis-->
             <dependency>
@@ -251,13 +244,13 @@
                         </dependency>
                     </dependencies>
                 </plugin>
-                <plugin>
+                <!--<plugin>
                     <groupId>org.mybatis.generator</groupId>
                     <artifactId>mybatis-generator-maven-plugin</artifactId>
                     <version>${mybatis.generator.version}</version>
-                    <configuration>
+                   &lt;!&ndash; <configuration>
                         <configurationFile>${mybatis.generator.configFile}</configurationFile>
-                    </configuration>
+                    </configuration>&ndash;&gt;
                     <dependencies>
                         <dependency>
                             <groupId>mysql</groupId>
@@ -270,7 +263,7 @@
                             <version>${tk.mybatis.mapper.version}</version>
                         </dependency>
                     </dependencies>
-                </plugin>
+                </plugin>-->
             </plugins>
         </pluginManagement>
     </build>

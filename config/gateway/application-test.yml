@@ -1,0 +1,62 @@
+server:
+  port: 8080
+swagger:
+  service-name: "Spring Cloud Demo API Docs"
+  service-desc: "DEMO接口文档"
+spring:
+  profiles.include:
+    - swagger
+    - redis
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: turbine
+          uri: lb://TURBINE
+          predicates:
+            - Path=/turbine/**
+          filters:
+            - StripPrefix=1
+        - id: todo-service
+          uri: lb://TODO-SERVICE
+          predicates:
+            - Path=/todo-service/**
+          filters:
+            - StripPrefix=1
+        - id: user-service
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/user-service/**
+          filters:
+            - StripPrefix=1
+        - id: project-service
+          uri: lb://PROJECT-SERVICE
+          predicates:
+            - Path=/project-service/**
+          filters:
+            - StripPrefix=1
+        - id: message-service
+          uri: lb:ws://MESSAGE-SERVICE
+          predicates:
+            - Path=/message-service/**
+          filters:
+            - StripPrefix=1
+        - id: dummy-service
+          uri: lb://PROJECT-SERVICE
+          predicates:
+            - Path=/rate-limit/**
+          filters:
+            - StripPrefix=1
+            - name: RequestRateLimiter
+              args:
+                redis-rate-limiter.replenishRate: 1
+                redis-rate-limiter.burstCapacity: 5
+                key-resolver: "#{@apiKeyResolver}"
