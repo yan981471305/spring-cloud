@@ -1,21 +1,16 @@
-package demo.ms.user;
-
-
+package demo.user;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
+
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
-import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.context.annotation.Configuration;
 
-@EnableHystrix
-@EnableCircuitBreaker
-@EntityScan({"demo.ms.user.entity"})
+
+/*@EntityScan({"demo.user.entity"})*/
 @EnableEurekaClient
-@SpringBootApplication
+@SpringBootApplication(exclude= {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
 @Configuration
 public class UserServiceApplication {
 

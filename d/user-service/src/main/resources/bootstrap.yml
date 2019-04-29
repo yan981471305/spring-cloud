@@ -1,16 +1,22 @@
 spring:
   application:
     name: user-service
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo?characterEncoding=utf-8&allowMultiQueries=true
+    username: root
+    password: root
   cloud:
     config:
       discovery:
         enabled: true
         service-id: config-server
       name: ${spring.application.name}
-     # 远程仓库的分支
-     label: master
-     # dev 开发环境配置文件 |  test 测试环境  |  pro 正式环境
-     profile: dev
+      # 远程仓库的分支
+      label: master
+      # dev 开发环境配置文件 |  test 测试环境  |  pro 正式环境
+      profile: dev
       fail-fast: true
       retry:  #启用连接失败重试，需要依赖spring-retry和spring-boot-starter-aop
         initial-interval: 1000  #最初重试间隔为1000毫秒
@@ -28,3 +34,7 @@ eureka:
 logging:
   level:
     org.springframework.security: debug
+
+flyway:
+  baseline-on-migrate: true
+  locations: classPath:db/migration

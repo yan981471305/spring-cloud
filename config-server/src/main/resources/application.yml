@@ -11,7 +11,7 @@ spring:
           ignore-local-ssh-settings: true
           strictHostKeyChecking: false
           force-pull: true
-          search-paths: config
+          search-paths: '{application}'
           clone-on-start: true
           username: yan981471305
           password: yan199436
