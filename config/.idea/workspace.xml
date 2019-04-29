@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfe82053-71e4-4677-8ca0-1a9dd7c2ffde" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-server/src/test/java/demo/configserver/ConfigServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/src/test/java/demo/configserver/ConfigServerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth2-server/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eureka/src/main/java/demo/eureka/EurekaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka/src/main/java/demo/eureka/EurekaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/application-pro.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/application-pro.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../eureka/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/src/main/java/demo/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/java/demo/gateway/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/src/main/java/demo/gateway/swagger/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/java/demo/gateway/swagger/SwaggerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../parent/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/UserServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,13 +17,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gateway/application.yml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gateway/application-dev.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="741">
               <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gateway/application-pro.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gateway/application-test.yml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -45,6 +49,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/gateway/application.yml" />
+        <option value="$PROJECT_DIR$/gateway/application-pro.yml" />
       </list>
     </option>
   </component>
@@ -55,8 +60,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="x" value="24" />
+    <option name="y" value="406" />
+    <option name="width" value="1725" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -73,6 +80,11 @@
               <item name="config" type="b2602c69:ProjectViewProjectNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="config" type="b2602c69:ProjectViewProjectNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -82,7 +94,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556500779756" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556502479084" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../user-service" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -90,6 +102,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\spring-cloud\config\gateway" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -118,12 +135,20 @@
       <workItem from="1556182105211" duration="2129000" />
       <workItem from="1556411757325" duration="1034000" />
       <workItem from="1556431302106" duration="4040000" />
-      <workItem from="1556439009491" duration="627000" />
+      <workItem from="1556439009491" duration="1993000" />
     </task>
+    <task id="LOCAL-00001" summary="修改">
+      <created>1556500841343</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1556500841343</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7957000" />
+    <option name="totallyTimeSpent" value="9323000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -204,6 +229,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application-flyway.yml">
@@ -233,10 +260,20 @@
     <entry file="file://$PROJECT_DIR$/application-undertow.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/application.yml">
+    <entry file="file://$PROJECT_DIR$/gateway/application-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="741">
           <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/application-test.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/application-pro.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
         </state>
       </provider>
     </entry>

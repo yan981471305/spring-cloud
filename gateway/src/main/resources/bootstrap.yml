@@ -28,19 +28,3 @@ eureka:
 logging:
   level:
     org.springframework.security: debug
-#management:
-#  endpoints:
-#    web:
-#      base-path: "/"
-#---
-#spring:
-#  profiles: default
-#  cloud:
-#    config:
-#      discovery:
-#        enabled: false
-#      uri: http://config.demo.io
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone: http://${eureka.username}:${eureka.password}@eureka1:8761/eureka,http://${eureka.username}:${eureka.password}@eureka2:8762/eureka
