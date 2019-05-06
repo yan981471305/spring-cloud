@@ -5,7 +5,6 @@ swagger:
   service-desc: "DEMO接口文档"
 spring:
   profiles.include:
-    - swagger
     - redis
   cloud:
     gateway:

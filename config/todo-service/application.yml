@@ -5,10 +5,8 @@ flyway:
   table: todo-schema-version
 spring:
   profiles.include:
-    - swagger
     - flyway
     - rabbit
-    - jwt
     - mysql
     - undertow
     - feign
