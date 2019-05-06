@@ -4,8 +4,8 @@ swagger:
   service-name: "Spring Cloud Demo API Docs"
   service-desc: "DEMO接口文档"
 spring:
-  profiles.include:
-    - redis
+ # profiles.include:
+  #  - redis
   cloud:
     gateway:
       globalcors:
