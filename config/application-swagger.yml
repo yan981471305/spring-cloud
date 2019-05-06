@@ -1,5 +1,0 @@
-swagger:
-  oauth:
-    base-url:  http://account.alauda.demo
-    client-id: demo_client
-    client-secret: demo_secret
