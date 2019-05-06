@@ -3,10 +3,8 @@ swagger:
   service-desc: "管理用户"
 spring:
   profiles.include:
-    - swagger
     - flyway
     - rabbit
-    - jwt
     - undertow
     - feign
     - hystrix

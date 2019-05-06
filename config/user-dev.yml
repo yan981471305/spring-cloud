@@ -5,7 +5,6 @@ spring:
   profiles.include:
     - flyway
     - rabbit
-    - jwt
     - undertow
     - feign
     - hystrix
