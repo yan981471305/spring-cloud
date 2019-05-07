@@ -7,7 +7,7 @@ spring:
     - rabbit
     - undertow
     - feign
-    - hystrix
+  #  - hystrix
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
