@@ -2,61 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfe82053-71e4-4677-8ca0-1a9dd7c2ffde" name="Default Changelist" comment="修改">
-      <change afterPath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/api/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/config/WebMVCConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/enums/PlatformCodeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/exception/BaseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/exception/ErrorHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/exception/ExceptionHanlder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/exception/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/utils/MyMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/api/UserFeginClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/api/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/api/dto/UserQueryDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/api/dto/UserResultVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/contanst/UserErrorCodeConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/entity/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user-service/src/main/resources/db/migration/V1.0__demo_init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user-service/src/main/resources/errorcode.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../user-service/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../d/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../d/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../d/user-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../d/user-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../d/user-service/src/main/resources/db/migration/V1_1__User.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../d/user-service/src/main/resources/db/migration/V1_1__User.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../d/user-service/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../d/user-service/target/classes/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eureka/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/config/ResourceServerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/config/RestTemplateConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/config/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/entity/Authority.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/entity/Card.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/entity/Message.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/entity/Project.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/entity/Todo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/entity/UserProjectRef.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/stream/LoggerEventSink.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/vo/JwtUserInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/vo/WebSocketContext.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../parent/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/UserServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/repository/AuthorityRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/repository/ProjectRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/repository/UserProjectRefRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service/src/main/resources/db/migration/V1_1__CreateUserProjectRefTable.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/contanst/UserErrorCodeConstant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/contanst/UserErrorCodeConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/exception/UserErrorCodeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,11 +37,7 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/user-dev.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -276,7 +223,7 @@
       <workItem from="1557189658679" duration="2213000" />
       <workItem from="1557213907793" duration="632000" />
       <workItem from="1557279193499" duration="677000" />
-      <workItem from="1557319650955" duration="705000" />
+      <workItem from="1557319650955" duration="1636000" />
     </task>
     <task id="LOCAL-00001" summary="修改">
       <created>1556500841343</created>
@@ -401,7 +348,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27283000" />
+    <option name="totallyTimeSpent" value="28214000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -601,11 +548,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/user-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

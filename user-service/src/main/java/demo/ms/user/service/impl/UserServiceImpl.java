@@ -4,14 +4,13 @@ import com.github.pagehelper.PageInfo;
 import demo.ms.common.exception.BaseException;
 import demo.ms.user.api.dto.UserDTO;
 import demo.ms.user.api.dto.UserQueryDTO;
-import demo.ms.user.contanst.UserErrorCodeConstant;
+import demo.ms.user.exception.UserErrorCodeException;
 import demo.ms.user.dao.UserDao;
 import demo.ms.user.entity.UserEntity;
 import demo.ms.user.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 
 
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -43,7 +42,7 @@ public class UserServiceImpl implements UserService {
     public UserDTO getUser(Integer id) {
             UserEntity user = userDao.query(id);
         if (user == null) {
-            throw new BaseException(UserErrorCodeConstant.USER_STATTUS);
+            throw new BaseException(UserErrorCodeException.USER_STATTUS);
         }
 
         return  null;
