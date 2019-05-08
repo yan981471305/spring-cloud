@@ -1,3 +1,5 @@
+server:
+  port: 8888
 spring:
   application:
     name: user-service
@@ -36,5 +38,4 @@ logging:
     org.springframework.security: debug
 
 flyway:
-  baseline-on-migrate: true
-  locations: classPath:db/migration
+  enabled: true

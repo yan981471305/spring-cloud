@@ -7,11 +7,11 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/yan981471305/spring-cloud
+          uri: https://github.com/yan981471305/spring-cloud.git
           ignore-local-ssh-settings: true
           strictHostKeyChecking: false
           force-pull: true
-          search-paths: '{application}'
+          search-paths: config
           clone-on-start: true
           username: yan981471305
           password: yan199436
@@ -20,4 +20,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:10000/eureka/
+  instance:
+    instance-id: config-server
+  #  prefer-ip-address: true
 

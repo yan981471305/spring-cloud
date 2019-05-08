@@ -6,6 +6,8 @@ spring:
       discovery:
         enabled: true
         service-id: config-server
+      #本微服务启动后先去找config-server服务，通过SpringCloudConfig获取GitHub的服务地址
+  #    uri: http://localhost:10001
       name: ${spring.application.name}
       # 远程仓库的分支
       label: master
@@ -17,14 +19,13 @@ spring:
         multiplier: 1.2         #每次重试失败后，重试间隔所增加的倍数
         max-attempts: 30        #最多重试 30 次
         max-interval: 5000      #最长重试间隔为 5000 毫秒
+
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:10000/eureka/
   instance:
+    instance-id: gateway
     prefer-ip-address: true
-    lease-renewal-interval-in-seconds: 5
-    lease-expiration-duration-in-seconds: 10
-logging:
-  level:
-    org.springframework.security: debug
+
+

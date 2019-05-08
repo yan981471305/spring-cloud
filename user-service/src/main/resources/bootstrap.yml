@@ -1,3 +1,9 @@
+swagger:
+  enabled: true #必需
+  docket:
+    base-package: demo.ms.user   #必需
+server:
+  port: 8888
 spring:
   application:
     name: user-service
@@ -6,11 +12,13 @@ spring:
       discovery:
         enabled: true
         service-id: config-server
-      name: ${spring.application.name}
-     # 远程仓库的分支
-     label: master
-     # dev 开发环境配置文件 |  test 测试环境  |  pro 正式环境
-     profile: dev
+      #本微服务启动后先去找config-server服务，通过SpringCloudConfig获取GitHub的服务地址
+     # uri: http://localhost:10001
+      name: user
+      # 远程仓库的分支
+      label: master
+      # dev 开发环境配置文件 |  test 测试环境  |  pro 正式环境
+      profile: dev
       fail-fast: true
       retry:  #启用连接失败重试，需要依赖spring-retry和spring-boot-starter-aop
         initial-interval: 1000  #最初重试间隔为1000毫秒
@@ -22,9 +30,10 @@ eureka:
     service-url:
       defaultZone: http://localhost:10000/eureka/
   instance:
+    instance-id: user-service
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 5
     lease-expiration-duration-in-seconds: 10
 logging:
   level:
-    org.springframework.security: debug
+    demo.ms.user.dao.UserDao: debug
