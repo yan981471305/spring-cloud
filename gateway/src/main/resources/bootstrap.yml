@@ -1,6 +1,8 @@
 spring:
   application:
     name: gateway
+  zipkin:  #链路追踪
+    base-url: http://localhost:9411
   cloud:
     config:
       discovery:
@@ -11,7 +13,7 @@ spring:
       name: ${spring.application.name}
       # 远程仓库的分支
       label: master
-      # dev 开发环境配置文件 |  test 测试环境  |  pro 正式环境
+      # dev 开发环境配置文件 |  test 测试环境   |  pro 正式环境
       profile: dev
       fail-fast: true
       retry:  #启用连接失败重试，需要依赖spring-retry和spring-boot-starter-aop
@@ -26,6 +28,6 @@ eureka:
       defaultZone: http://localhost:10000/eureka/
   instance:
     instance-id: gateway
-    prefer-ip-address: true
+ #   prefer-ip-address: true
 
 

@@ -17,9 +17,9 @@ public class RouterConfig {
     }
 
     @Bean
-    RouterFunction<?> routerFunction(){
+    RouterFunction<?> routerFunction() {
         RouterFunction router = RouterFunctions.resources("/webjars/**", new ClassPathResource("/"))
-                                        .andOther(RouterFunctions.resources("/swagger-ui.html", new ClassPathResource("/")));
+                .andOther(RouterFunctions.resources("/swagger-ui.html", new ClassPathResource("/")));
         return router;
     }
 }
