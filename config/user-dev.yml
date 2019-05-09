@@ -33,12 +33,3 @@ mybatis:
   mapper-locations:
     - classpath:/mapper/**/*.xml                       # mapper映射文件
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:10000/eureka/
-  instance:
-    instance-id: user-service
-    prefer-ip-address: true
-    lease-renewal-interval-in-seconds: 5
-    lease-expiration-duration-in-seconds: 10
