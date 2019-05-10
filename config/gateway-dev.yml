@@ -24,11 +24,11 @@ spring:
           predicates:
             - Path=/user-service/**
           filters:
-            - StripPrefix=2
+            - StripPrefix=1
         - id: dept-service
             uri: lb://dept-service
             predicates:
               - Path=/dept-service/**
             filters:
-              - StripPrefix=2
+              - StripPrefix=1
 
