@@ -1,11 +1,10 @@
-
 server:
   port: 10009
 swagger:
   service-name: "Spring Cloud Demo API Docs"
   service-desc: "DEMO接口文档"
 spring:
- # profiles.include:
+  # profiles.include:
   #  - redis
   cloud:
     gateway:
@@ -24,14 +23,13 @@ spring:
           predicates:
             - Path=/user-service/**
           filters:
-            - SwaggerHeaderFilter
             - StripPrefix=1
-
+            - SwaggerHeaderFilter
         - id: dept-service
           uri: lb://dept-service
           predicates:
             - Path=/dept-service/**
           filters:
-            - SwaggerHeaderFilter
             - StripPrefix=1
+            - SwaggerHeaderFilter
 
