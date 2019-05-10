@@ -29,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gateway-dev.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+            <state relative-caret-position="572">
+              <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -73,8 +73,8 @@
         <option value="$PROJECT_DIR$/todo-service/application.yml" />
         <option value="$PROJECT_DIR$/application-feign.yml" />
         <option value="$PROJECT_DIR$/user-dev.yml" />
-        <option value="$PROJECT_DIR$/gateway-dev.yml" />
         <option value="$PROJECT_DIR$/dept-dev.yml" />
+        <option value="$PROJECT_DIR$/gateway-dev.yml" />
       </list>
     </option>
   </component>
@@ -114,7 +114,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557450482524" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557452413091" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../zipkin" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -163,7 +163,7 @@
       <workItem from="1557213907793" duration="632000" />
       <workItem from="1557279193499" duration="677000" />
       <workItem from="1557319650955" duration="1638000" />
-      <workItem from="1557363137679" duration="10148000" />
+      <workItem from="1557363137679" duration="10958000" />
     </task>
     <task id="LOCAL-00001" summary="修改">
       <created>1556500841343</created>
@@ -312,15 +312,21 @@
       <option name="project" value="LOCAL" />
       <updated>1557385454452</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="修改">
+      <created>1557450541439</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1557450541439</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38364000" />
+    <option name="totallyTimeSpent" value="39174000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24840085" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -522,8 +528,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gateway-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        <state relative-caret-position="572">
+          <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
         </state>
       </provider>
     </entry>
