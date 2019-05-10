@@ -31,7 +31,7 @@ public class SwaggerHandler {
         this.swaggerResources = swaggerResources;
     }
 
-    /*@GetMapping("/configuration/security")
+   /* @GetMapping("/configuration/security")
     public Mono<ResponseEntity<SecurityConfiguration>> securityConfiguration() {
         return Mono.just(new ResponseEntity<>(Optional.ofNullable(securityConfiguration).orElse(SecurityConfigurationBuilder.builder().build()), HttpStatus.OK));
     }*/
@@ -43,6 +43,7 @@ public class SwaggerHandler {
 
     @GetMapping("")
     public Mono<ResponseEntity> swaggerResources() {
-        return Mono.just((new ResponseEntity<>(swaggerResources.get(),  HttpStatus.OK)));
+        return Mono.just((new ResponseEntity<>(swaggerResources.get(), HttpStatus.OK)));
     }
 }
+

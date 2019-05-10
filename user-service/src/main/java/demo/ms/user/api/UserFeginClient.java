@@ -19,8 +19,8 @@ public interface UserFeginClient {
      * @param id 主键
      * @return 详情
      */
-    @GetMapping("/get")
-    Response<UserDTO> get(@RequestParam(value = "id") Integer id);
+    @GetMapping("/{id}")
+    Response<UserDTO> get(@PathVariable(value = "id") Integer id);
 
     /**
      * 查询列表/分页.

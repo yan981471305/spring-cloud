@@ -2,6 +2,7 @@ package demo.ms.user.service.impl;
 
 import com.github.pagehelper.PageInfo;
 import demo.ms.common.exception.BaseException;
+import demo.ms.dept.api.DeptClient;
 import demo.ms.user.api.dto.UserDTO;
 import demo.ms.user.api.dto.UserQueryDTO;
 import demo.ms.user.exception.UserErrorCodeException;
@@ -11,7 +12,6 @@ import demo.ms.user.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 
 
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -32,7 +32,8 @@ public class UserServiceImpl implements UserService {
 
     /*@Autowired
     private ModelMapper modelMapper;*/
-
+    @Autowired
+    private DeptClient deptClient;
     /**
      * 查询  详情.
      *
@@ -45,8 +46,11 @@ public class UserServiceImpl implements UserService {
         if (user == null) {
             throw new BaseException(UserErrorCodeException.USER_STATTUS);
         }
+        UserDTO userDTO=new UserDTO();
+        userDTO.setAge(user.getAge());
+        userDTO.setName(user.getName());
 
-        return  null;
+        return  userDTO;
     }
 
 

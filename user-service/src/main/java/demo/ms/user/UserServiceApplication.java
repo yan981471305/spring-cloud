@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.PropertySource;
 
 
-@EnableFeignClients
+@EnableFeignClients(basePackages = "demo.ms.dept.api")
 @EnableEurekaClient
 @SpringBootApplication
 @PropertySource(value = {"errorcode.properties"}, encoding = "utf-8")

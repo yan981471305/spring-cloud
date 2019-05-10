@@ -23,12 +23,11 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <file.encoding>UTF-8</file.encoding>
-        <spring-boot.version>2.0.3.RELEASE</spring-boot.version>
+        <spring-boot.version>2.0.4.RELEASE</spring-boot.version>
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
         <springfox.version>2.9.2</springfox.version>
         <mysql.connnector.version>5.1.46</mysql.connnector.version>
         <elasticsearch.version>6.4.3</elasticsearch.version>
-        <flyway.version>5.1.4</flyway.version>
         <fastjson.version>1.2.47</fastjson.version>
         <druid.starter.version>1.1.10</druid.starter.version>
         <lombok.version>1.14.8</lombok.version>
@@ -37,6 +36,9 @@
         <platform-bom.version>Cairo-SR2</platform-bom.version>
         <zipkin.version>2.10.1</zipkin.version>
         <swagger.version>2.9.2</swagger.version>
+        <modelmapper.version>2.3.0</modelmapper.version>
+        <mapper.version>2.0.3</mapper.version>
+        <pagehelper.version>1.2.10</pagehelper.version>
     </properties>
 
     <dependencyManagement>
@@ -55,6 +57,18 @@
                 <version>${project.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>spring-cloud-demo</groupId>
+                <artifactId>dept-service</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>spring-cloud-demo</groupId>
+                <artifactId>user-service</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
             <!--spring cloud -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
@@ -67,7 +81,14 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
-                <version>2.0.4.RELEASE</version>
+                <version>${spring-boot.version}</version>
+                <!-- 排除logging包 -->
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-starter-logging</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
             <!-- spring-retry用于启动时连接config-server失败重试 -->
@@ -112,6 +133,23 @@
                 <version>${mybatis.version}</version>
             </dependency>
 
+            <!--通用mapper-->
+            <dependency>
+                <groupId>tk.mybatis</groupId>
+                <artifactId>mapper-spring-boot-starter</artifactId>
+                <version>${mapper.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.modelmapper</groupId>
+                <artifactId>modelmapper</artifactId>
+                <version>${modelmapper.version}</version>
+            </dependency>
+            <!--分页插件-->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${pagehelper.version}</version>
+            </dependency>
             <!--swagger2-->
             <dependency>
                 <groupId>io.springfox</groupId>
@@ -139,27 +177,21 @@
                 <artifactId>zipkin-autoconfigure-ui</artifactId>
                 <version>${zipkin.version}</version>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
-   <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.flywaydb</groupId>
-                    <artifactId>flyway-maven-plugin</artifactId>
-                    <version>${flyway.version}</version>
-                    <dependencies>
-                        <dependency>
-                            <groupId>mysql</groupId>
-                            <artifactId>mysql-connector-java</artifactId>
-                            <version>${mysql.connnector.version}</version>
-                        </dependency>
-                    </dependencies>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-    </build>
+
+    <!--<build>
+        <plugins>
+            &lt;!&ndash;使单元测试不影响项目的编译 &ndash;&gt;
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>&lt;!&ndash;跳过单元测试 &ndash;&gt;
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>-->
 
   <!--连接maven-
     <distributionManagement>

@@ -22,8 +22,7 @@ import java.util.Date;
 @Getter
 @Setter
 @ToString
-public class UserDTO extends Page {
-    private static final long serialVersionUID = 1L;
+public class UserDTO {
 
 
     /**

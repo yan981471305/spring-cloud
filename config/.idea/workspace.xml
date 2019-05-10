@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfe82053-71e4-4677-8ca0-1a9dd7c2ffde" name="Default Changelist" comment="修改">
+      <change afterPath="$PROJECT_DIR$/../gateway/src/main/java/demo/gateway/swagger/SwaggerHeaderFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/src/main/java/demo/gateway/swagger/SwaggerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/java/demo/gateway/swagger/SwaggerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/src/main/java/demo/gateway/swagger/SwaggerProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/java/demo/gateway/swagger/SwaggerProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ms-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-common/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../parent/pom.xml" afterDir="false" />
@@ -35,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gateway-dev.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+            <state relative-caret-position="570">
+              <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -120,7 +123,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557469820985" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557471809981" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../zipkin" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -169,7 +172,7 @@
       <workItem from="1557213907793" duration="632000" />
       <workItem from="1557279193499" duration="677000" />
       <workItem from="1557319650955" duration="1638000" />
-      <workItem from="1557363137679" duration="12597000" />
+      <workItem from="1557363137679" duration="14277000" />
     </task>
     <task id="LOCAL-00001" summary="修改">
       <created>1556500841343</created>
@@ -346,11 +349,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557469637665</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="修改">
+      <created>1557469860007</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1557469860007</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40813000" />
+    <option name="totallyTimeSpent" value="42493000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -563,8 +573,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gateway-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        <state relative-caret-position="570">
+          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="32" />
         </state>
       </provider>
     </entry>

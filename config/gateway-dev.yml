@@ -24,11 +24,14 @@ spring:
           predicates:
             - Path=/user-service/**
           filters:
+            - SwaggerHeaderFilter
             - StripPrefix=1
+
         - id: dept-service
           uri: lb://dept-service
           predicates:
             - Path=/dept-service/**
           filters:
+            - SwaggerHeaderFilter
             - StripPrefix=1
 
