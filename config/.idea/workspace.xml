@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cfe82053-71e4-4677-8ca0-1a9dd7c2ffde" name="Default Changelist" comment="">
+    <list default="true" id="cfe82053-71e4-4677-8ca0-1a9dd7c2ffde" name="Default Changelist" comment="修改">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/test/java/demo/ms/user/UserServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/test/java/demo/ms/user/UserServiceApplicationTests.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +26,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gateway-dev.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="660">
               <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dept-dev.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -60,6 +74,7 @@
         <option value="$PROJECT_DIR$/application-feign.yml" />
         <option value="$PROJECT_DIR$/user-dev.yml" />
         <option value="$PROJECT_DIR$/gateway-dev.yml" />
+        <option value="$PROJECT_DIR$/dept-dev.yml" />
       </list>
     </option>
   </component>
@@ -70,7 +85,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="209" />
+    <option name="x" value="24" />
+    <option name="y" value="406" />
     <option name="width" value="1725" />
     <option name="height" value="1047" />
   </component>
@@ -89,21 +105,6 @@
               <item name="config" type="b2602c69:ProjectViewProjectNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="config" type="b2602c69:ProjectViewProjectNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="todo-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="config" type="b2602c69:ProjectViewProjectNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="turbine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="config" type="b2602c69:ProjectViewProjectNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="user-service" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -113,7 +114,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557385389455" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557450482524" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../zipkin" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -162,7 +163,7 @@
       <workItem from="1557213907793" duration="632000" />
       <workItem from="1557279193499" duration="677000" />
       <workItem from="1557319650955" duration="1638000" />
-      <workItem from="1557363137679" duration="8589000" />
+      <workItem from="1557363137679" duration="10148000" />
     </task>
     <task id="LOCAL-00001" summary="修改">
       <created>1556500841343</created>
@@ -304,11 +305,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557384706606</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="修改">
+      <created>1557385454452</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1557385454452</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36805000" />
+    <option name="totallyTimeSpent" value="38364000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -516,6 +524,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dept-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="22" />
         </state>
       </provider>
     </entry>

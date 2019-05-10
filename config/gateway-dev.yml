@@ -20,9 +20,15 @@ spring:
           enabled: true
       routes:
         - id: user-service
-          uri: lb://USER-SERVICE
+          uri: lb://user-service
           predicates:
             - Path=/user-service/**
           filters:
             - StripPrefix=2
+        - id: dept-service
+            uri: lb://dept-service
+            predicates:
+              - Path=/dept-service/**
+            filters:
+              - StripPrefix=2
 
