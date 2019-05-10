@@ -97,6 +97,12 @@
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+        </dependency>
+
         <!--通用mapper-->
         <dependency>
             <groupId>tk.mybatis</groupId>

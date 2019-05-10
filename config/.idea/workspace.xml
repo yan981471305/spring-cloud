@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfe82053-71e4-4677-8ca0-1a9dd7c2ffde" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/aop/PageHelpAOP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/pagehelper/Pagehelpcontroller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/pagehelper/Pagehelpservice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-common/src/main/java/demo/ms/common/utils/PageBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/api/dto/UserQueryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/api/dto/UserQueryDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/demo/ms/user/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,7 +19,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/user-dev.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
@@ -21,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gateway-dev.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="34" column="33" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="33" />
+            <state relative-caret-position="632">
+              <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -33,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dept-dev.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="-238">
               <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="22" />
             </state>
           </provider>
@@ -79,9 +86,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="24" />
-    <option name="y" value="406" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="74" />
+    <option name="y" value="369" />
     <option name="width" value="1725" />
     <option name="height" value="1047" />
   </component>
@@ -109,7 +116,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557472370657" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557477434513" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../zipkin" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -158,7 +165,7 @@
       <workItem from="1557213907793" duration="632000" />
       <workItem from="1557279193499" duration="677000" />
       <workItem from="1557319650955" duration="1638000" />
-      <workItem from="1557363137679" duration="14784000" />
+      <workItem from="1557363137679" duration="16022000" />
     </task>
     <task id="LOCAL-00001" summary="修改">
       <created>1556500841343</created>
@@ -349,14 +356,21 @@
       <option name="project" value="LOCAL" />
       <updated>1557471830643</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="网关整合swagger2">
+      <created>1557472439102</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1557472439102</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43000000" />
+    <option name="totallyTimeSpent" value="44238000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24840085" />
@@ -475,7 +489,8 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改" />
+    <MESSAGE value="网关整合swagger2" />
+    <option name="LAST_COMMIT_MESSAGE" value="网关整合swagger2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/oauth2-server/application.yml" />
@@ -550,24 +565,24 @@
         <state relative-caret-position="-5508" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-dev.yml">
+    <entry file="file://$PROJECT_DIR$/gateway-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        <state relative-caret-position="632">
+          <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dept-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="-238">
           <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gateway-dev.yml">
+    <entry file="file://$PROJECT_DIR$/user-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="33" />
+        <state relative-caret-position="480">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
         </state>
       </provider>
     </entry>

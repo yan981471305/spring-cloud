@@ -1,5 +1,6 @@
 package demo.ms.user.api.dto;
 
+import com.github.pagehelper.Page;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
@@ -19,7 +20,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @ApiModel(value = "查询参数")
-public class UserQueryDTO {
+public class UserQueryDTO extends Page {
     @ApiModelProperty(value = "")
     private String name;
 

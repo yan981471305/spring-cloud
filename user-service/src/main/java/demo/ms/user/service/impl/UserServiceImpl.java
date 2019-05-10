@@ -2,6 +2,7 @@ package demo.ms.user.service.impl;
 
 import com.github.pagehelper.PageInfo;
 import demo.ms.common.exception.BaseException;
+import demo.ms.common.pagehelper.Pagehelpservice;
 import demo.ms.dept.api.DeptClient;
 import demo.ms.user.api.dto.UserDTO;
 import demo.ms.user.api.dto.UserQueryDTO;
@@ -62,6 +63,7 @@ public class UserServiceImpl implements UserService {
      * @return 分页/列表
      */
     @Override
+    @Pagehelpservice
     public PageInfo<UserDTO> queryList(UserQueryDTO userQueryDTO) {
         // selectByQueryParams 需要自己写实现
        /* List<UserDTO> result = userDao.selectByQueryParams(userQueryDTO).stream()
