@@ -28,7 +28,7 @@
         <springfox.version>2.9.2</springfox.version>
         <mysql.connnector.version>5.1.46</mysql.connnector.version>
         <elasticsearch.version>6.4.3</elasticsearch.version>
-        <fastjson.version>1.2.47</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <druid.starter.version>1.1.10</druid.starter.version>
         <lombok.version>1.14.8</lombok.version>
         <spring.retry.version>1.2.2.RELEASE</spring.retry.version>
